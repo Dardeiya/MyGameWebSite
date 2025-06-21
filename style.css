@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Фон всей страницы */
+}
+
+header {
+    background-color: #aeb6bf; /* Новый цвет заголовка */
+    color: white;
+    padding: 15px;
+    text-align: left; /* Переносим текст влево */
+}
+
+nav ul {
+    display: flex; /* Используем Flexbox для горизонтального расположения */
+    list-style-type: none; /* Убираем маркеры */
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px; /* Расстояние между элементами навигации */
+}
+
+section {
+    padding: 20px;
+    margin: 15px;
+    border-radius: 8px; /* Скругление углов */
+}
+
+#updates {
+    background-color: #e7f3fe; /* Фон раздела Версии */
+}
+
+#cheat-info {
+    background-color: #cf0404; /* Новый фон для секции Чита */
+    border: 1px solid #000000; /* Граница для раздела Чита */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333; /* Цвет подвала */
+    color: white;
+}
+
+/* Другие стили по желанию */
