@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
     <title>Моя Игра Угадай Число</title>
 </head>
 <body>
@@ -19,60 +19,103 @@
     </header>
 
     <!-- Раздел О игре -->
-    <section id="about">
+    <section id="about" class="section-block">
         <h2>О игре</h2>
         <p>Это игра, где нужно угадать число. Участвуйте и улучшайте свои результаты!</p>
     </section>
 
     <!-- Раздел Версии и патчи -->
-    <section id="updates">
+    <section id="updates" class="section-block">
         <h2>Версии и патчи</h2>
-        <ul>
+
+        <ul class="updates-list">
             <li>
                 <h3>Версия 0.0.2.7</h3>
                 <p>Добавлены:</p>
                 <ul>
-                    <li>Кнопка "Сброс" во время игры для того чтобы перейти в главное меню</li>
+                    <li>Кнопка "Сброс" во время игры для перехода в главное меню</li>
                     <li>Тряска окна при неправильном ответе</li>
                 </ul>
-                <a href="version-0.0.2.7.zip" download>Скачать версию 0.0.2.7</a>
+                <a href="version-0.0.2.7.zip" download class="btn-download">Скачать версию 0.0.2.7</a>
             </li>
             <li>
                 <h3>Версия 0.0.2.5</h3>
-                <li>Добавлена анимация при выигрыше.</li>
-                <a href="version-0.0.2.5.zip" download>Скачать версию 0.0.2.5</a>
+                <ul>
+                    <li>Добавлена анимация при выигрыше.</li>
+                </ul>
+                <a href="version-0.0.2.5.zip" download class="btn-download">Скачать версию 0.0.2.5</a>
             </li>
             <li>
                 <h3>Версия 0.0.2</h3>
-                <li>Добавлены новые уровни и улучшен интерфейс.</li>
-                <a href="version-0.0.2.zip" download>Скачать версию 0.0.2</a>
+                <ul>
+                    <li>Добавлены новые уровни и улучшен интерфейс.</li>
+                </ul>
+                <a href="version-0.0.2.zip" download class="btn-download">Скачать версию 0.0.2</a>
             </li>
             <li>
                 <h3>Версия 0.0.1</h3>
-                <li>Первая версия игры, где можно угадать число от 1 до 100.</li>
-                <a href="version-0.0.1.zip" download>Скачать версию 0.0.1</a>
+                <ul>
+                    <li>Первая версия игры, где можно угадать число от 1 до 100.</li>
+                </ul>
+                <a href="version-0.0.1.zip" download class="btn-download">Скачать версию 0.0.1</a>
+            </li>
+        </ul>
+
+        <h2>Утилиты для улучшения игры</h2>
+        <ul class="updates-list">
+            <li class="utility-item">
+                <h3>Автокликер</h3>
+                <div class="utility-content">
+                    <img src="ClickMessage.png" alt="Автокликер" class="utility-img" />
+                    <div>
+                        <p>Мощный автокликер для автоматизации кликов.</p>
+                        <a href="Autoclicker.exe" download class="btn-download">Скачать Autoclicker.exe</a>
+                    </div>
+                </div>
+            </li>
+            <li class="utility-item">
+                <h3>FPS Счётчик</h3>
+                <div class="utility-content">
+                    <img src="Fps.png" alt="FPS счётчик" class="utility-img" />
+                    <div>
+                        <p>Программа для измерения кадров в секунду на ПК.</p>
+                        <a href="FPS.exe" download class="btn-download">Скачать FPS.exe</a>
+                    </div>
+                </div>
             </li>
         </ul>
     </section>
 
     <!-- Скрытая информация о версии чита -->
-    <section id="cheat-info" style="display: none;">
+    <section id="cheat-info" class="section-block hidden">
         <h2>Cheat: Autoguessing</h2>
         <p>Cheat version 1.0: automatic number guesser.</p>
         <p>Only version 0.0.2 is supported.</p>
-        <a href="cheat-autoguessing-1.0.zip" download>Download cheat version</a>
-        <img src="cheat-image1.jpg" alt="cheat image 1" />
-        <img src="cheat-image2.jpg" alt="cheat image 2" />
-        <img src="cheat-image3.jpg" alt="cheat image 3" />
+        <a href="cheat-autoguessing-1.0.zip" download class="btn-download">Download cheat version</a>
+        <div class="cheat-images">
+            <img src="cheat-image1.jpg" alt="cheat image 1" />
+            <img src="cheat-image2.jpg" alt="cheat image 2" />
+            <img src="cheat-image3.jpg" alt="cheat image 3" />
+        </div>
+    </section>
+
+    <!-- Раздел с объяснением по антивирусам -->
+    <section id="antivirus-info" class="section-block">
+        <h2>Почему антивирусы могут детектировать эти программы?</h2>
+        <p>Некоторые антивирусы могут ошибочно считать автокликеры и утилиты с автоматизацией подозрительными (ложные срабатывания). Это связано с особенностями работы таких программ и способами их упаковки.</p>
+        <p>Мы рекомендуем скачивать только с официального сайта, а также при необходимости добавлять программы в исключения антивируса.</p>
+        <p>Если возникают вопросы, мы всегда готовы помочь!</p>
     </section>
 
     <!-- Раздел Галерея -->
-    <section id="gallery">
+    <section id="gallery" class="section-block">
         <h2>Галерея изменений</h2>
-        <img src="image1.jpg" alt="Версия 0.0.1" />
-        <img src="image2.jpg" alt="Версия 0.0.2" />
-        <img src="image3.jpg" alt="Версия 0.0.2.5" />
-        <img src="image4.jpg" alt="Версия 0.0.2.7" />
+        <div class="gallery-images">
+            <img src="image1.jpg" alt="Версия 0.0.1" />
+            <img src="image2.jpg" alt="Версия 0.0.2" />
+            <img src="image3.jpg" alt="Версия 0.0.2.5" />
+            <img src="image4.jpg" alt="Версия 0.0.2.7" />
+        </div>
     </section>
 
     <footer>
