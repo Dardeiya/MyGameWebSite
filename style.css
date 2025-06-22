@@ -1,47 +1,182 @@
+/* Общие стили */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0; /* Фон всей страницы */
+    background: linear-gradient(135deg, #d7e1ec, #f5f7fa);
+    color: #2c3e50;
 }
 
 header {
-    background-color: #aeb6bf; /* Новый цвет заголовка */
-    color: white;
-    padding: 15px;
-    text-align: left; /* Переносим текст влево */
+    background-color: #34495e;
+    color: #ecf0f1;
+    padding: 20px 40px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 2em;
 }
 
 nav ul {
-    display: flex; /* Используем Flexbox для горизонтального расположения */
-    list-style-type: none; /* Убираем маркеры */
+    display: flex;
+    list-style: none;
     padding: 0;
+    margin-top: 10px;
 }
 
 nav ul li {
-    margin: 0 15px; /* Расстояние между элементами навигации */
+    margin-right: 25px;
 }
 
-section {
+nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1em;
+    padding: 6px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    background-color: #2980b9;
+    outline: none;
+}
+
+.section-block {
+    background-color: #fff;
+    margin: 25px 40px;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+h2 {
+    font-weight: 700;
+    color: #34495e;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #2980b9;
+    padding-bottom: 5px;
+}
+
+.updates-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.updates-list > li {
+    margin-bottom: 30px;
+    border-left: 4px solid #2980b9;
+    padding-left: 15px;
+    background: #f9fbfd;
+    border-radius: 6px;
+}
+
+.updates-list li h3 {
+    margin-top: 0;
+    color: #2c3e50;
+}
+
+.updates-list li ul {
+    padding-left: 20px;
+    margin-top: 5px;
+}
+
+.updates-list li ul li {
+    margin-bottom: 4px;
+}
+
+/* Кнопки скачивания */
+.btn-download {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 18px;
+    background-color: #2980b9;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    user-select: none;
+}
+
+.btn-download:hover,
+.btn-download:focus {
+    background-color: #1c5980;
+    outline: none;
+}
+
+/* Блок утилит с изображениями */
+.utility-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.utility-img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Скрытый раздел читов */
+.hidden {
+    display: none !important;
+}
+
+.cheat-images img {
+    max-width: 30%;
+    margin: 10px 10px 0 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* Галерея */
+.gallery-images {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-images img {
+    width: 180px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+    transition: transform 0.3s ease;
+}
+
+.gallery-images img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* Блок с предупреждением по антивирусам */
+#antivirus-info {
+    background-color: #f8d7da;
+    border: 1px solid #f5c2c7;
+    color: #842029;
     padding: 20px;
-    margin: 15px;
-    border-radius: 8px; /* Скругление углов */
-}
-
-#updates {
-    background-color: #e7f3fe; /* Фон раздела Версии */
-}
-
-#cheat-info {
-    background-color: #cf0404; /* Новый фон для секции Чита */
-    border: 1px solid #000000; /* Граница для раздела Чита */
+    border-radius: 10px;
+    margin: 30px 40px;
+    font-size: 1.1em;
+    line-height: 1.5;
 }
 
 footer {
     text-align: center;
-    padding: 10px;
-    background-color: #333; /* Цвет подвала */
-    color: white;
+    padding: 15px;
+    background-color: #34495e;
+    color: #ecf0f1;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    margin-top: 50px;
 }
-
-/* Другие стили по желанию */

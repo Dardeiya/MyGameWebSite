@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
         clickCount++;
         
         if (clickCount === 7) {
-            cheatInfoSection.style.display = 'block'; // Показать скрытый раздел после 7 кликов
+            cheatInfoSection.classList.remove('hidden'); // Показать скрытый раздел после 7 кликов
             clickCount = 0; // Сбросить счётчик
         }
     });
